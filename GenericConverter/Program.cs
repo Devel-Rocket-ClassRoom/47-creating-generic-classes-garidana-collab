@@ -6,4 +6,7 @@ using static System.Console;
 
 
 var conv = new Converter<string, int>( s => s.Length);
-WriteLine(conv.Convert("Hello"));
+
+WriteLine("=== 문자열 -> 길이 변환 ===");
+WriteLine($"Hello -> {conv.Convert("Hello")}");
+WriteLine()
